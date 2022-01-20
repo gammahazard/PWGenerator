@@ -7,7 +7,7 @@ Minimum length - 8 characters
 Maximum length - 128 characters
 
 
-Symbols included for password generation: !£$%^&*()_+=-#@?><
+Symbols included for password generation: -->  !@#$%^&*)(><';, <--
 
 
 How to use:

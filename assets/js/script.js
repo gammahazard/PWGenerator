@@ -2,7 +2,7 @@
 const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowercase = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
-const symbols = "!£$%^&*()_+=-#@?><";
+const symbols = "!@#$%^&*)(><';,";
 //event listen on load page, when copy and generate button are clicked, will generate pw and copy to clipboard
   window.addEventListener('DOMContentLoaded', (event) => {
   document.getElementById('generateBtn').addEventListener('click', generatePassword);
@@ -29,11 +29,12 @@ function generatePassword() {
     if (document.getElementById('uppercasebox').checked) {
         password += getUppercase();
     }
-//gen pw and place near top for user to see
+//gen pw and place near top for user to see, pw length less then 
     for (let i = password.length; i < len; i++) {
         let char = generateChar();
         password += char;
     }
+    // show password to user
 document.getElementById('pw').innerText = password;
 }
 
