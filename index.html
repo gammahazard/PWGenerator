@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="description" content="A Password generator that creates strong passwords.">
+
+    <title>Password Generator</title>
+</head>
+
+
+<body>
+    <div style="background-image: url('./assets/imgs/pwgen.jpg');">
+    <div id="genbox">
+        <h1 id="pwgentext">Password Generator</h1><small id="min">Min 8. Max 128 characters</small>
+        <div id="mainBox">
+            <div class="pwBox" id="pw"><br></div><br>
+            <button id="copy" aria-label="clipboard">Copy</button>
+        </div>
+        <div class="Criterion">
+            <label for="lengthBox">
+                Password Length
+                <input type="number" min="8" max="128" value="8" id="lengthBox">
+            </label>
+        </div>
+
+        <div class="Criterion">
+            <label for="uppercasebox">
+                Contain Uppercase letters
+                <input type="checkbox" id="uppercasebox" class="btn" unchecked>
+            </label>
+        </div>
+
+        <div class="Criterion">
+            <label for="lowercasebox">
+                Contain Lowercase letters
+                <input type="checkbox" id="lowercasebox" class="btn" checked>
+            </label>
+        </div>
+
+        <div class="Criterion">
+            <label for="numberbox">
+                Contain Numbers
+                <input type="checkbox" id="numberbox" class="btn">
+            </label>
+        </div>
+
+        <div class="Criterion">
+            <label for="symbolbox">
+                Contain Symbols
+                <input type="checkbox" id="symbolbox" class="btn">
+            </label>
+        </div>
+
+        <div class="Criterion1">
+            <label for="generateBtn">
+                <button id="generateBtn">Generate Password</button>
+            </label>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+
+</html>

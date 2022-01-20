@@ -1,0 +1,52 @@
+
+body {
+    display:flex;
+    justify-content:center;
+    background-color:grey;
+    color:white;
+}
+div.pwBox {
+    border:1px dotted rgb(247, 5, 5);
+    width:auto;
+    display:inline-flex;
+    font-size:250%;
+    background-color:grey;
+    color:orange;
+    width:auto;
+    margin-left:25%
+}
+div.Criterion {
+margin-top:15px;
+margin-bottom:15px;
+border: 0.5px solid rgb(255, 0, 0);
+width:fit-content;
+}
+#generateBtn {
+
+display:inline;
+background-color:orange;
+color:black;
+font-weight:bolder;
+margin-left:25%;
+
+}
+#copy{
+    display:inline;
+background-color:orange;
+color:black;
+font-weight:bolder;
+margin-left:45%;
+
+}
+#min {
+    margin-left:25%;
+}
+div.criterion1 {
+    border:10px solid rgb(187, 255, 0);
+}
+#pwgentext {
+    margin-left:25%
+}
+#bodypic {
+    background-size:contain;
+}
